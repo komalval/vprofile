@@ -1,5 +1,5 @@
-FROM openjdk:8               # FROM<image>
-VOLUME /tmp                   # Temporary location to run
+FROM openjdk:8         
+VOLUME /tmp                   
 ADD target/vprofile-v2.war vprofile-v2.war
 # Expose the port that your application will run on
 EXPOSE 8080
