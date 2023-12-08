@@ -8,7 +8,7 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 WORKDIR /usr/local/tomcat/webapps
 
 # Copy the WAR file into the container at /usr/local/tomcat/webapps
-COPY  /target/vprofile-v2.war .
+COPY  /target/vprofile-v2.war /usr/local/tomacat/webapps
 
 # Expose the port that your application will run on
 EXPOSE 8080
